@@ -9,10 +9,10 @@ const url = `https://discord.com/api/v10/applications/${config.DISCORD_CLIENT_ID
 // supported types: number_lt=1, number_gt=2, number_eq=3 number_neq=4, datetime_lt=5, datetime_gt=6, boolean_eq=7
 const body = [
   {
-    key: 'purchasedproducts',
-    name: 'Purchased Products',
-    description: 'Amount of products bought on PM',
-    type: 2,
+    key: 'clientsince',
+    name: 'Client Since',
+    description: 'Days since becoming PM Client',
+    type: 6,
   },
   {
     key: 'isclient',
@@ -21,11 +21,11 @@ const body = [
     type: 7,
   },
   {
-    key: 'clientsince',
-    name: 'Client Since',
-    description: 'Verified PM Client since',
-    type: 6,
-  }
+    key: 'purchasedproducts',
+    name: 'Purchased Products',
+    description: 'Amount of products bought on PM',
+    type: 2,
+  },
 ];
 
 const response = await fetch(url, {
