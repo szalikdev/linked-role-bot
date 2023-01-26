@@ -111,9 +111,9 @@ async function updateMetadata(userId) {
     // is going to be different.  To keep the example simple, we'll
     // just generate some random data. 
     metadata = {
-      cookieseaten: 1483,
-      allergictonuts: false,
-      firstcookiebaked: '2003-12-20',
+      purchasedproducts: 15,
+      isclient: true,
+      clientsince: '2022-12-01',
     };
   } catch (e) {
     e.message = `Error fetching external data: ${e.message}`;
